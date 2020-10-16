@@ -26,8 +26,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
-            <div class="collapse navbar-collapse" id="Navbar">
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse md-" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
@@ -41,20 +41,26 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 align-self-center">
                     <h1 style="font-family: 'David Libre', serif">Ristorante con Fusion</h1>
-                    <p style="font-family: Sansita Swashed, cursive">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p style="font-family: Sansita Swashed, cursive">
+                        We take inspiration from the World's best cuisines,
+                         and create a unique fusion experience. 
+                         Our lipsmacking creations will tickle your culinary senses!
+                    </p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="btn-group col-12 col-sm-3 align-self-center" role="group"  >
+                    <a role="button" class="btn btn-warning px-5 font-weight-bold" href="#reserve-form">Reserve Table</a>
             </div>
         </div>
     </header>
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12 order-sm-last col-sm-6">
+            <div class="col-12 order-sm-last col-sm-2">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-12 order-sm-first col-sm">
@@ -74,17 +80,25 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-2">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img class="d-flex ml-6 order-last img-thumbnail align-self-center"
+                    src="img/buffet.png" alt="Buffet">
+                    <div class="media-body order-first">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, 
+                            six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks.
+                             All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-12 order-sm-last col-sm-6">
+            <div class="col-12 order-sm-last col-sm-2">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-12 order-sm-first col-sm">
@@ -103,7 +117,7 @@
             </div>
         </div>
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-8 offset-sm-2">
+            <div class="col-12 col-md-7 offset-sm-2">
                 <div class="card">
                     <h3 class="card-header bg-warning" style="color:floralwhite">
                       Reserve a Table
@@ -111,12 +125,12 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12">
-                                <form>
+                                <form id="reserve-form">
                                     <div class="form-group row">
-                                        <div class="col-12 col-lg-3">
+                                        <div class="col-12 col-md-3 col-lg-2">
                                             <h6>Number of Guests</h6>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-md-9 col-lg-10">
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="radio" name="inlineRadio" id="inlineRadio1" value="1">
                                                 <label class="form-check-label" for="inlineRadio1">1</label>
@@ -144,7 +158,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-lg-2">
                                             <h6>Date and Time</h6>
                                         </div>
                                         <div class="col-md-4">
@@ -157,9 +171,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="offset-1 offset-sm-3">
-                                            <button class="btn btn-primary"
-                                            style="margin-left: 15px;" type="submit">
+                                        <div class="col-3 offset-md-3 offset-lg-2 col-md-3">
+                                            <button class="btn btn-primary font-weight-bold"
+                                             type="submit">
                                             Reserve
                                         </button>
                                         </div>
