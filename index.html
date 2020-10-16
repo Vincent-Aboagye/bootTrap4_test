@@ -53,7 +53,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="btn-group col-12 col-sm-3 align-self-center" role="group"  >
-                    <a role="button" class="btn btn-warning px-5 font-weight-bold" href="#reserve-form">Reserve Table</a>
+                    <a role="button" class="btn btn-warning btn-block btn-sm font-weight-bold" href="#reserve-form">Reserve Table</a>
             </div>
         </div>
     </header>
@@ -68,7 +68,14 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                     src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza 
+                            <span class="badge badge-danger">
+                                HOT
+                            </span>
+                            <span class="badge badge-pill badge-secondary">
+                                $4.99
+                            </span>
+                        </h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, 
                         topped with Cerignola olives, ripe vine cherry tomatoes, 
                         Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
@@ -85,14 +92,15 @@
             </div>
             <div class="col-12 col-sm">
                 <div class="media">
-                    <img class="d-flex ml-6 order-last img-thumbnail align-self-center"
-                    src="img/buffet.png" alt="Buffet">
-                    <div class="media-body order-first">
+                    
+                    <div class="media-body">
                         <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, 
                             six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks.
                              All for just $19.99 per person </p>
                     </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center"
+                    src="img/buffet.png" alt="Buffet">
                 </div>
             </div>
         </div>
@@ -123,9 +131,9 @@
                       Reserve a Table
                     </h3>
                     <div class="card-body">
-                        <div class="row">
+                        <div class="row" id="reserve-form">
                             <div class="col-12">
-                                <form id="reserve-form">
+                                <form>
                                     <div class="form-group row">
                                         <div class="col-12 col-md-3 col-lg-2">
                                             <h6>Number of Guests</h6>
@@ -166,7 +174,7 @@
                                             placeholder="Date">
                                         </div>
                                         <div class="col-md-4">
-                                            <input type="datetime" class="form-control" id="time" name="time"
+                                            <input type="time" class="form-control" id="time" name="time"
                                                 placeholder="Time">
                                         </div>
                                     </div>
