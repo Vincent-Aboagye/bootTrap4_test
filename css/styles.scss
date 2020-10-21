@@ -1,7 +1,7 @@
 $lt-gray: #ddd;
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
+$background-dark: #4c0051;
+$background-light: #9801a3;
+$background-pale: #e6bdeb;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -73,4 +73,24 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header{
+    background-color: $background-dark;
+    .modal-title{
+        color: floralwhite;
+    }
+    .close{
+        color: floralwhite;
+    }
+}
+.modal-body{
+    background-color: $background-pale;
+}
+
+.card-header{
+    cursor: pointer;
+}
+span.navbar-text{
+    cursor: pointer;
 }
